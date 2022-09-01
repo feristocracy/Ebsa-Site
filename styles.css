@@ -1,0 +1,198 @@
+*   {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+@font-face  {
+            font-family: "Montserrat";
+            src: url("fonts/Montserrat-Regular.otf");
+            src: url("fonts/Montserrat-BlackItalic.otf");
+            src: url("fonts/Montserrat-Black.otf");
+            src: url("fonts/Montserrat-Bold.otf");
+            src: url("fonts/Montserrat-BoldItalic.otf");
+            src: url("fonts/Montserrat-ExtraBold.otf");
+            src: url("fonts/Montserrat-ExtraBoldItalic.otf");
+            src: url("fonts/Montserrat-ExtraLight.otf");
+            src: url("fonts/Montserrat-ExtraLightItalic.otf");
+            src: url("fonts/Montserrat-Italic.otf");
+            src: url("fonts/Montserrat-LightItalic.otf");
+            src: url("fonts/Montserrat-Medium.otf");
+            src: url("fonts/Montserrat-MediumItalic.otf");
+            src: url("fonts/Montserrat-SemiBold.otf");
+            src: url("fonts/Montserrat-SemiBoldItalic.otf");
+            src: url("fonts/Montserrat-Thin.otf");
+            src: url("fonts/Montserrat-ThinItalic.otf");
+            src: url("fonts/MontserratAlternates-Black.otf");
+            }
+
+@font-face  {
+            font-family: "Poppins";
+            src: url("fonts/Poppins/Poppins-Black.ttf");
+            src: url("fonts/Poppins/Poppins-BlackItalic.ttf");
+            src: url("fonts/Poppins/Poppins-Bold.ttf");
+            src: url("fonts/Poppins/Poppins-BoldItalic.ttf");
+            src: url("fonts/Poppins/Poppins-ExtraBold.ttf");
+            src: url("fonts/Poppins/Poppins-ExtraBoldItalic.ttf");
+            src: url("fonts/Poppins/Poppins-ExtraLight.ttf");
+            src: url("fonts/Poppins/Poppins-ExtraLightItalic.ttf");
+            src: url("fonts/Poppins/Poppins-Italic.ttf");
+            src: url("fonts/Poppins/Poppins-Light.ttf");
+            src: url("fonts/Poppins/Poppins-LightItalic.ttf");
+            src: url("fonts/Poppins/Poppins-Medium.ttf");
+            src: url("fonts/Poppins/Poppins-MediumItalic.ttf");
+            src: url("fonts/Poppins/Poppins-Regular.ttf");
+            }
+
+body{
+    background-color: #171E34;
+    }
+
+/*---------------- MENU ------------------*/
+#menuContainer  {
+                width: 100%;
+                background-image: url("/media/home_landscape.jpg");
+                background-size: 100%;
+                min-height: 600px;
+                background-repeat: no-repeat;
+                }
+
+#homeLandscape  {
+                width: 100%;
+                }
+
+#nav{
+    float: right;
+    }
+
+#menu li{
+        margin-right: 15px;
+        margin-top: 25px;
+        display: inline-block;
+        }
+
+#menu li a  {
+            display: block;
+            font-size: 15px;
+            margin-left: auto;
+            padding: 5px;
+            font-family: Poppins;
+            color: white;
+            text-decoration: none;
+            margin: 0;
+            }
+/*---------------- ------------------------*/
+
+
+.shadow_div {
+            margin-top: -40px;
+            display: block;
+            width: 100%;
+            height: 80px;
+            background: rgba(86, 86, 90, 0.382);
+            background: linear-gradient(180deg, rgba(68, 68, 71, 0.145) 0%, rgba(62, 65, 65, 0.414) 51%, rgba(59, 62, 61, 0.096) 100%);
+            }
+
+#white_div  {
+            
+            margin-top: -40px;
+            height: 50px;
+            width: 40%;
+            background: rgba(43, 43, 45, 0.184);
+            background: linear-gradient(180deg, rgba(43,43,45,0.1973739324831495) 0%, rgba(255, 255, 255, 0.133) 0%, rgba(255,255,255,0) 63%, rgba(255,255,255,0) 100%);
+            }
+
+#carrusel   {
+            display: inline-block;
+            height: 550px;
+            width: 50%;
+            background: #354577;
+            }
+
+#container_somos{
+                float: right;
+                display: grid;
+                width: 50%;
+                height: 550px;
+                place-items: center;
+                }
+
+#somos_div  {
+            top: 50%;
+            width: 70%;
+            text-align: justify;
+            display: block;
+            }
+
+#somos_div h2   {
+                text-align: center;
+                margin-bottom: 10px;
+                color: aliceblue;
+                display: block;
+                font-family: Montserrat;
+                font-size: 30px;
+                }
+
+#somos_div p{
+            font-size: 15px;
+            font-family: Poppins;
+            color: white;
+            }
+
+/*------------------Carrusel-------------------*/
+.slick-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick {
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.slick h4 {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 22px;
+    color: white;
+    padding: 15px;
+}
+
+.slick small {
+    font-size: 15px;
+    display: block;
+}
+
+.slick a img {
+    object-fit: cover;
+    height: 300px;
+    width: 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, alpha.5);
+    transition: .3 ease-in-out;
+}
+
+.slick a img:hover {
+    opacity: .85;
+}

@@ -1,11 +1,71 @@
+/*---------------- GENERALES ------------------*/
 *   {
     margin: 0;
     padding: 0;
     border: 0;
     }
 
+#universe   {
+            margin: auto;
+            width: 100%;
+            max-width: 2000px;
+
+            }
+
+body{
+    background-color: #1C223C;
+    }
+/*-----Botones -----*/
+.myButton {
+    margin-top: -60px;
+    left: 50%;
+    margin-left: width/2;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    background-color:#768d87;
+    border-radius:42px;
+    border:1px solid #566963;
+    display:block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Montserrat;
+    font-size:15px;
+    font-weight:bold;
+    padding:11px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    background-color:#6c7c7c;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.myButton2 {
+    margin-bottom: 30px;
+	background:linear-gradient(to bottom, #38476c 5%, #38476c 100%);
+	background-color:#38476c;
+	border-radius:18px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+}
+/*---------------------------------------------*/     
+
+/*---------------- FONTS ------------------*/
+
 @font-face  {
             font-family: "Montserrat";
+            src: url("fonts/Montserrat-ExtraLight.otf");
+            /* src: url("fonts/Montserrat-Thin.otf");
             src: url("fonts/Montserrat-Regular.otf");
             src: url("fonts/Montserrat-BlackItalic.otf");
             src: url("fonts/Montserrat-Black.otf");
@@ -13,7 +73,6 @@
             src: url("fonts/Montserrat-BoldItalic.otf");
             src: url("fonts/Montserrat-ExtraBold.otf");
             src: url("fonts/Montserrat-ExtraBoldItalic.otf");
-            src: url("fonts/Montserrat-ExtraLight.otf");
             src: url("fonts/Montserrat-ExtraLightItalic.otf");
             src: url("fonts/Montserrat-Italic.otf");
             src: url("fonts/Montserrat-LightItalic.otf");
@@ -21,14 +80,14 @@
             src: url("fonts/Montserrat-MediumItalic.otf");
             src: url("fonts/Montserrat-SemiBold.otf");
             src: url("fonts/Montserrat-SemiBoldItalic.otf");
-            src: url("fonts/Montserrat-Thin.otf");
             src: url("fonts/Montserrat-ThinItalic.otf");
-            src: url("fonts/MontserratAlternates-Black.otf");
+            src: url("fonts/MontserratAlternates-Black.otf"); */
             }
 
 @font-face  {
             font-family: "Poppins";
-            src: url("fonts/Poppins/Poppins-Black.ttf");
+            src: url("fonts/Poppins/Poppins-Light.ttf");
+            /* src: url("fonts/Poppins/Poppins-Black.ttf");
             src: url("fonts/Poppins/Poppins-BlackItalic.ttf");
             src: url("fonts/Poppins/Poppins-Bold.ttf");
             src: url("fonts/Poppins/Poppins-BoldItalic.ttf");
@@ -37,25 +96,51 @@
             src: url("fonts/Poppins/Poppins-ExtraLight.ttf");
             src: url("fonts/Poppins/Poppins-ExtraLightItalic.ttf");
             src: url("fonts/Poppins/Poppins-Italic.ttf");
-            src: url("fonts/Poppins/Poppins-Light.ttf");
             src: url("fonts/Poppins/Poppins-LightItalic.ttf");
             src: url("fonts/Poppins/Poppins-Medium.ttf");
             src: url("fonts/Poppins/Poppins-MediumItalic.ttf");
-            src: url("fonts/Poppins/Poppins-Regular.ttf");
+            src: url("fonts/Poppins/Poppins-Regular.ttf"); */
             }
+/*--------------------------------------------*/
 
-body{
-    background-color: #171E34;
-    }
 
 /*---------------- MENU ------------------*/
 #menuContainer  {
                 width: 100%;
-                background-image: url("/media/home_landscape.jpg");
+                background-image: url("/media/home_landscape2.jpg");
                 background-size: 100%;
                 min-height: 600px;
                 background-repeat: no-repeat;
                 }
+
+#menuContainer h2   {
+                    text-align: justify;
+                    line-height: 28px;
+                    width: 330px;
+                    position: absolute;
+                    color: white;
+                    font-family: Montserrat;
+                    letter-spacing: 2px;
+                    font-size: 17px;
+                    top: 370px;
+                    left: 850px;
+                    }     
+                    
+#logo_small {
+            display: none;
+            }                    
+.sticky_navbar  {
+                z-index: 100 ;
+                height: 60px;
+                display: flex;
+                justify-content: right;
+                background-color: black;
+                top: 0;
+                width: 100%;
+                position: fixed;
+                align-items: center;
+                }
+
 
 #homeLandscape  {
                 width: 100%;
@@ -65,9 +150,18 @@ body{
     float: right;
     }
 
+#nav img{
+        position: absolute;
+        left: 50px;
+        height: 60px;
+        }
+
+#menu   {
+        margin-top: 25px;
+        }
+
 #menu li{
         margin-right: 15px;
-        margin-top: 25px;
         display: inline-block;
         }
 
@@ -81,9 +175,10 @@ body{
             text-decoration: none;
             margin: 0;
             }
-/*---------------- ------------------------*/
+/*----------------------------------------*/
 
 
+/*------------Sección Carrusel -------------*/
 .shadow_div {
             margin-top: -40px;
             display: block;
@@ -102,22 +197,25 @@ body{
             background: linear-gradient(180deg, rgba(43,43,45,0.1973739324831495) 0%, rgba(255, 255, 255, 0.133) 0%, rgba(255,255,255,0) 63%, rgba(255,255,255,0) 100%);
             }
 
-#carrusel   {
-            display: inline-block;
-            height: 550px;
-            width: 50%;
-            background: #354577;
-            }
+#carrusel_fondo {
+                float: left;
+                display: grid;
+                place-items: center;
+                height: 550px;
+                width: 40%;
+                background: #354577;
+                }
 
 #container_somos{
                 float: right;
                 display: grid;
-                width: 50%;
+                width: 60%;
                 height: 550px;
                 place-items: center;
                 }
 
 #somos_div  {
+            margin-top: 40px;
             top: 50%;
             width: 70%;
             text-align: justify;
@@ -127,72 +225,278 @@ body{
 #somos_div h2   {
                 text-align: center;
                 margin-bottom: 10px;
-                color: aliceblue;
+                color: #797979;
                 display: block;
                 font-family: Montserrat;
-                font-size: 30px;
+                font-size: 22px;
+                letter-spacing: 26px;
                 }
 
 #somos_div p{
-            font-size: 15px;
+            font-size: 16px;
             font-family: Poppins;
             color: white;
             }
 
-/*------------------Carrusel-------------------*/
-.slick-list {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 304px;
-    padding: 10px 0px;
-    margin: 0px auto;
-    max-width: 90vw;
-    overflow: hidden;
+/*---Carrusel---*/
+
+#carrusel   {
+            position: relative;
+            width: 400px;
+            height: 500px;
+        
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            }
+
+#carrusel ul{
+            position: relative;
+            list-style: none;
+            height: 100%;
+            width: 10000%;
+            padding: 0;
+            margin: 0;
+            transition: all 750ms ease;
+            left: 0;
+            }
+
+#carrusel ul li {
+                position: relative;
+                height: 100%;
+                float: left;
+                }
+
+#carrusel ul li img {
+                    width: 400px;
+                    height: 500px;
+                    }
+
+/*-------------------------------------------*/
+
+/*------------Sección Mapita ---------------*/
+#container_mapa {
+                padding: 10px 0;
+                float: left;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: #DDDDDD;
+                width: 100%;
+                height: 650px;
+                }
+
+#mapita {
+        float: left;
+        display: inline;
+        height: 100%;
+        }
+
+#mapita img {
+            height: 100%;
+            }
+
+#plantas_div{
+            width: 350px;
+            display: grid;
+            place-items: left;
+            text-align: center;
+            height: 600px;
+            float: right;
+            }
+
+#plantas_div h2{
+    letter-spacing: 15px;
+    font-family: Montserrat;
+    margin-top: 170px;
+        display: block;
 }
 
-.slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    transition: .5s ease-in-out;
+#plantas_div p{
+    line-height: 25px;
+    text-align: justify;
+    font-size: 20px;
 }
 
-.slick {
-    position: relative;
-    width: 275px;
-    padding: 0 18px;
-    float: left;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
+#plantas_div div {
+    margin-top: 50px;
 }
 
-.slick h4 {
-    position: absolute;
-    z-index: 1;
-    font-size: 22px;
-    line-height: 22px;
-    color: white;
-    padding: 15px;
-}
+#plantas_div a  {
+    margin: auto;
+                width: 90px;
+                }
 
-.slick small {
-    font-size: 15px;
+#plantas_texto  {
+                color: rgb(152, 150, 150);
+                font-size: 20px;
+                font-family: Poppins;
+                width: 300px;
+                }
+/*---------------------------------------------*/
+
+/*------------Sección Video ---------------*/
+#video  {
+        place-items: center;
+        display: grid;
+        flex-direction: row;
+        height: 500px;
+        width: 100%;
+        background-color: #DDDDDD;
+        }
+
+#video iframe {
+    border: white 10px solid;
+}
+/*---------------------------------------------*/
+
+/*------------Sección Productos----------------*/
+#productos_container{
+                    text-align: center;
+                    background-color: #DDDDDD;
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    }
+                
+#productos_container h2 {
+    font-size: 18px;
+                        letter-spacing: 15px;
+                        padding-bottom: 15px;
+                        font-family: Montserrat;
+                        color: rgb(152, 150, 150);
+                        }
+
+#productos_container p  {
+    font-size: 13px;
+                        display: table-cell;
+                        padding: 10px 0;
+                        line-height: 21px;
+                        width: 50%;
+                        font-family: Poppins;
+                        color: rgb(152, 150, 150);
+                        }
+
+
+#certificaciones_container  {
+                            height: 100%;
+                            background-color: #DDDDDD;
+                            width: 100%;
+                            display: flex;
+                            place-items: center;
+                            flex-direction: row;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            align-self: center;
+                            }
+
+#certificaciones_container img {
+                                padding: 0 25px;
+                                }
+/*---------------------------------------------*/
+
+/*------------------Sección Granito------------------*/
+.waves  {
+        display: flex;
+        width: 100%;
+        height: 200px ;
+        background-color: #DDDDDD;
+        }
+        
+.waves img  {
+            width: 100%;
+            height: 100%;
+            }
+
+#granito{
+        background-color: #1C223C;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px;
+        margin-top: -50px;
+        }
+
+#granito img{
+            height: 350px;
+            position: relative;
+            right: 70px;
+            }        
+
+#granito p  {
+            width: 300px;
+            font-family: Montserrat;
+            text-align: justify;
+            color: white;
+            }        
+
+#granito_texto  {
+                justify-content: center;
+                display: flex;
+                place-items: center;
+                height: 400px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                }            
+
+#granito_texto a{
+                background-color: #38476C;
+                }                
+
+#basalto{
+        background-color: #DDDDDD;
+        height: 200px;
+        width: 100%;
+        }
+        
+#basalto::before {
+    content: "";
     display: block;
-}
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background: inherit;
+    transform-origin: bottom right;
+    transform: skewY(6deg);
+    }
 
-.slick a img {
-    object-fit: cover;
-    height: 300px;
-    width: 100px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, alpha.5);
-    transition: .3 ease-in-out;
-}
+#basalto::after {
+                content: "";
+                display: block;
+                position: relative;
+                height: 50%;
+                width: 100%;
+                background: inherit;
+                transform-origin: top right;
+                transform: skewY(-6deg);
+                }
 
-.slick a img:hover {
-    opacity: .85;
-}
+#linea_inclinada{
+                content: "";
+                position:static;
+                display: block;
+                z-index: 50;
+                background-color: #1C223C;
+                margin-top: -80px;
+                height: 100px;
+                width: 100%;
+                transform-origin: top left;
+                transform:skew(30deg);
+                }        
+/*---------------------------------------------*/
+
+/*----------------MEDIA QUERIES----------------*/
+/* @media only screen and (max-width: 1060px)  {
+                                            #container_mapa {
+                                                            flex-direction: column;
+                                                            }
+                                            } */
+
+
+      
+

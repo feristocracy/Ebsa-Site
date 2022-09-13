@@ -13,7 +13,7 @@
             }
 
 body{
-    background-color: #1C223C;
+    background-color: #171D34;
     }
 /*-----Botones -----*/
 .myButton {
@@ -130,7 +130,7 @@ body{
             display: none;
             }                    
 .sticky_navbar  {
-                z-index: 100 ;
+                z-index: 500;
                 height: 60px;
                 display: flex;
                 justify-content: right;
@@ -179,14 +179,12 @@ body{
 
 
 /*------------Sección Carrusel -------------*/
-.shadow_div {
-            margin-top: -40px;
-            display: block;
-            width: 100%;
-            height: 80px;
-            background: rgba(86, 86, 90, 0.382);
-            background: linear-gradient(180deg, rgba(68, 68, 71, 0.145) 0%, rgba(62, 65, 65, 0.414) 51%, rgba(59, 62, 61, 0.096) 100%);
-            }
+#sombra {
+        width: 100%;
+        height: 100px;
+        display: block;
+        margin-top: -56px;
+        }            
 
 #white_div  {
             
@@ -413,7 +411,8 @@ body{
             }
 
 #granito{
-        background-color: #1C223C;
+        z-index: -200;
+        background-color: #171D34;
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -449,45 +448,108 @@ body{
                 }                
 
 #basalto{
-        background-color: #DDDDDD;
-        height: 200px;
+        background-color: #DADADA;
+        height: 400px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 50;
         }
         
 #basalto::before {
-    content: "";
-    display: block;
-    position: relative;
-    height: 50%;
-    width: 100%;
-    background: inherit;
-    transform-origin: bottom right;
-    transform: skewY(6deg);
-    }
+                content: "";
+                z-index: 50;
+                display: block;
+                position: absolute;
+                height: 400px;
+                width: 100%;
+                background: inherit;
+                transform-origin: bottom right;
+                transform: skewY(6deg);
+                }
 
 #basalto::after {
+                z-index: -100;
                 content: "";
                 display: block;
-                position: relative;
-                height: 50%;
+                position: absolute;
+                height: 400px;
                 width: 100%;
                 background: inherit;
                 transform-origin: top right;
                 transform: skewY(-6deg);
                 }
 
-#linea_inclinada{
-                content: "";
-                position:static;
-                display: block;
-                z-index: 50;
-                background-color: #1C223C;
-                margin-top: -80px;
-                height: 100px;
-                width: 100%;
-                transform-origin: top left;
-                transform:skew(30deg);
+#basalto img{
+            padding-top: 50px;
+            z-index: 100;
+            }
+
+#basalto_texto  {
+                position: relative;
+                left: 100px;
+                display: flex;
+                height: 400px;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                z-index: 150;
+                justify-content: center;
+                }
+
+#basalto_texto p{
+                align-items: flex-start;
+                width: 300px;
+                font-family: Montserrat;
+                text-align: justify;
+                color: #717171;
+                margin-bottom: 50px;
+                padding-bottom: 100px;
+                }
+        
+ #bot   {
+        display: block;
+        padding-top: 50px;
+        margin: auto;
+        }
+
+#caliza {
+        height: 400px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: center;
+        margin-top: 150px;
+        z-index: 100;
+        }
+
+#caliza_texto   {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                height: 400px;
+                }
+
+#caliza_texto img   {
+                    z-index: 150;
+                    height: 100%;
+                    width: 100%;
+                    }
+
+#caliza_texto p {
+                width: 300px;
+                line-height: 27px;
+                font-family: Montserrat;
+                text-align: justify;
+                color: white;
                 }        
+                
+.secondwave {
+    z-index: -100;
+            transform: rotate(0.5turn) scaleX(-1);
+            }
 /*---------------------------------------------*/
 
 /*----------------MEDIA QUERIES----------------*/

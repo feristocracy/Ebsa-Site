@@ -107,7 +107,7 @@ body{
 /*---------------- MENU ------------------*/
 #menuContainer  {
                 width: 100%;
-                background-image: url("/media/home_landscape2.jpg");
+                background-image: url("./media/home_landscape2.jpg");
                 background-size: 100%;
                 min-height: 600px;
                 background-repeat: no-repeat;

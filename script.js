@@ -1,3 +1,32 @@
+const barras = document.getElementById("barras");
+const backMenu = document.getElementById("back_Menu");
+const nav = document.querySelector('#nav');
+let navTop = nav.offsetTop;
+const menu = document.getElementById("menu");
+const logo = document.getElementById("logo_small");
+  
+  
+  const showMenu = e => {
+    nav.style.right = "0px";
+    backMenu.style.display = "block";
+    e.stopPropagation();
+  }
+
+  const hideMenu = e => {
+    nav.style.right = "-250px";
+    backMenu.style.display = "none";
+    e.stopPropagation();
+  }
+
+  barras.addEventListener("click", e =>{
+    showMenu(e);
+  })
+
+  backMenu.addEventListener("click", e => {
+    hideMenu(e);
+  })
+
+
 var responsiveSlider = function() {
 
   var slider = document.getElementById("carrusel");
@@ -8,6 +37,9 @@ var responsiveSlider = function() {
   var prev = document.getElementById("prev");
   var next = document.getElementById("next");
   
+
+
+
   window.addEventListener('resize', function() {
     sliderWidth = slider.offsetWidth;
   });
@@ -49,13 +81,10 @@ var responsiveSlider = function() {
 
   /*--------------- STICKY NAV BAR ------------------*/
   
-  const nav = document.querySelector('#nav');
-  let navTop = nav.offsetTop;
-  const menu = document.getElementById("menu");
-  const logo = document.getElementById("logo_small");
+  
   
   function fixedNav() {
-    if (window.scrollY >= 100) {    
+    if (window.scrollY >= 100 && window.innerWidth > 1050) {    
       nav.classList.add('sticky_navbar');
       logo.style.display = "block";
       menu.style.marginTop = "0";

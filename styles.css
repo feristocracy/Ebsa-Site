@@ -43,7 +43,6 @@ body{
     position:relative;
     top:1px;
 }
-
 .myButton2 {
     margin-bottom: 30px;
 	background:linear-gradient(to bottom, #38476c 5%, #38476c 100%);
@@ -57,6 +56,24 @@ body{
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
+}
+.myButton3 {
+    margin-top: -60px;
+    left: 50%;
+    margin-left: width/2;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background: #E6E6E9);
+    background-color: #E6E6E9;
+    border-radius:42px;
+    border:1px solid #566963;
+    display:block;
+    cursor:pointer;
+    color: black;
+    font-family:Montserrat;
+    font-size:15px;
+    font-weight:bold;
+    padding:10px 55px;
+    text-decoration:none;
 }
 /*---------------------------------------------*/     
 
@@ -107,9 +124,10 @@ body{
 /*---------------- MENU ------------------*/
 #menuContainer  {
                 width: 100%;
-                background-image: url("/media/home_landscape2.jpg");
+                background-image: url("./media/home_landscape2.jpg");
                 background-size: 100%;
-                min-height: 600px;
+                height: 600px;
+                /*min-height: 600px;*/
                 background-repeat: no-repeat;
                 }
 
@@ -124,6 +142,7 @@ body{
                     font-size: 17px;
                     top: 370px;
                     left: 850px;
+                    transition: all 300ms;
                     }     
                     
 #logo_small {
@@ -140,7 +159,6 @@ body{
                 position: fixed;
                 align-items: center;
                 }
-
 
 #homeLandscape  {
                 width: 100%;
@@ -175,6 +193,22 @@ body{
             text-decoration: none;
             margin: 0;
             }
+
+#barras {
+        display: none;
+        }
+
+#back_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 50;
+    display: none;
+    transition: all 300ms;
+}
 /*----------------------------------------*/
 
 
@@ -202,6 +236,7 @@ body{
                 height: 550px;
                 width: 40%;
                 background: #354577;
+                transition: all 300ms;
                 }
 
 #container_somos{
@@ -210,6 +245,7 @@ body{
                 width: 60%;
                 height: 550px;
                 place-items: center;
+                transition: all 300ms;
                 }
 
 #somos_div  {
@@ -606,6 +642,50 @@ body{
                         font-family: Montserrat;
                         }                
 
+#threeTrains{
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 225px;
+            }
+
+#threeTrains img{
+                width: 80%;
+                margin-bottom: 100px;
+                }
+
+/*------------------------------------------------------*/
+
+/*------------------ Sección Clientes ------------------*/
+#clientes   {
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 110px;
+            }
+
+#clientes h5{
+            font-size: 40px;
+            color: #bebebe;
+            font-family: Montserrat;
+            margin-bottom: 50px;
+            letter-spacing: 15px;
+            font-weight: lighter;
+            }
+
+#clientes img   {
+                width: 600px;
+                }
+
+#bottom {
+        width: 100%;
+        display: block;
+        }
+/*------------------------------------------------------*/
 
 /*----------------MEDIA QUERIES----------------*/
 /* @media only screen and (max-width: 1060px)  {
@@ -614,6 +694,109 @@ body{
                                                             }
                                             } */
 
+/*----------------MEDIA QUERIES----------------*/
+@media screen and (max-width: 1250px) {
+    #sombra {
+        display: none;
+    }
+}
 
-      
+@media screen and (max-width: 1200px) {
+    #menuContainer {
+        height: 400px;
+    }
+
+    #menuContainer h2 {
+        top: 200px;
+        left: 60%;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    #nav {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 100;
+        box-sizing: border-box;
+        transition: all 300ms;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    #menu li {
+        margin-top: 10px;
+    }
+
+    #menu li a {
+
+    }
+
+    #carrusel_fondo {
+        width: 100%;
+        background-color: #354577;
+    }
+
+    #carrusel {
+        width: 400px;
+        height: 500px;
+    }
+
+    #container_somos {
+        width: 100%;
+    }
+
+    #logo_small2 {
+        display: block;
+    }
+
+    
+
+    #barras {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        background-color: white;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms;
+    }
+
+    #barras:hover {
+        background-color: rgb(171, 171, 171);
+    }
+}
+
+@media screen and (max-width: 1014px) {
+    #carrusel_fondo {
+        background-color: #171D34;
+    }
+
+    #carrusel {
+        width: 300px;
+        height: 375px;
+    }
+
+    .imgC {
+        width: 300px;
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    
+}
 

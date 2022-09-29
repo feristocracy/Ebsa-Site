@@ -1,11 +1,11 @@
 const barras = document.getElementById("barras");
-const backMenu = document.getElementById("back_Menu");
+const backMenu = document.getElementById("back_menu");
 const nav = document.querySelector('#nav');
 let navTop = nav.offsetTop;
 const menu = document.getElementById("menu");
 const logo = document.getElementById("logo_small");
   
-  
+
   const showMenu = e => {
     nav.style.right = "0px";
     backMenu.style.display = "block";
@@ -25,7 +25,6 @@ const logo = document.getElementById("logo_small");
   backMenu.addEventListener("click", e => {
     hideMenu(e);
   })
-
 
 var responsiveSlider = function() {
 
@@ -84,16 +83,20 @@ var responsiveSlider = function() {
   
   
   function fixedNav() {
-    if (window.scrollY >= 100 && window.innerWidth > 1050) {    
-      nav.classList.add('sticky_navbar');
-      logo.style.display = "block";
-      menu.style.marginTop = "0";
+    
+      if (window.scrollY >= 100 && window.innerWidth >= 1050) {    
+        nav.classList.add('sticky_navbar');
+        logo.style.display = "block";
+        menu.style.marginTop = "0";
+       
 
-    } else {
-      nav.classList.remove('sticky_navbar');
-      logo.style.display = "none";
-      menu.style.marginTop = "25px";
-    }
+      } else if (window.innerWidth >= 1050){
+        nav.classList.remove('sticky_navbar');
+        logo.style.display = "none";
+        menu.style.marginTop = "25px";
+      }
+    
+
   }
   
   window.addEventListener('scroll', fixedNav);                    

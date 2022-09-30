@@ -147,6 +147,9 @@ body{
                     
 #logo_small {
             display: none;
+            position: absolute;
+            left: 50px;
+            height: 60px;
             }                    
 .sticky_navbar  {
                 z-index: 500;
@@ -169,9 +172,7 @@ body{
     }
 
 #nav img{
-        position: absolute;
-        left: 50px;
-        height: 60px;
+        
         }
 
 #menu   {
@@ -742,11 +743,7 @@ body{
         flex-direction: column;
     }
 
-    #menu {
-        /* display: flex;
-        flex-direction: column; */
-        margin-top: 80px;
-    }
+    
 
     #menu li {
         margin-top: 10px;
@@ -754,6 +751,11 @@ body{
 
     #logo_small {
         display: block;
+        margin-bottom: 10px;
+        position: relative;
+        left: 0px;
+        float: left;
+        
     }
 
     #menu li a {
@@ -790,6 +792,10 @@ body{
 
     #barras:hover {
         background-color: rgb(171, 171, 171);
+    }
+
+    #nav.sticky_navbar {
+        padding-top: 80px;
     }
 }
 

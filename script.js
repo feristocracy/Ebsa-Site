@@ -4,17 +4,24 @@ const nav = document.querySelector('#nav');
 let navTop = nav.offsetTop;
 const menu = document.getElementById("menu");
 const logo = document.getElementById("logo_small");
-  
+let sideMenuOn = false;
+
 
   const showMenu = e => {
     nav.style.right = "0px";
+    logo.style.display = "block";
     backMenu.style.display = "block";
+    sideMenuOn = true;
     e.stopPropagation();
   }
 
   const hideMenu = e => {
     nav.style.right = "-250px";
     backMenu.style.display = "none";
+    sideMenuOn = false;
+    if(window.innerWidth >= 1050) {
+      nav.style.right = "0px";
+    }
     e.stopPropagation();
   }
 
@@ -83,18 +90,26 @@ var responsiveSlider = function() {
   
   
   function fixedNav() {
+
+    if (window.scrollY >= 1050) {
+      hideMenu();
+    }
     
       if (window.scrollY >= 100 && window.innerWidth >= 1050) {    
         nav.classList.add('sticky_navbar');
         logo.style.display = "block";
         menu.style.marginTop = "0";
-       
-
-      } else if (window.innerWidth >= 1050){
+      
+      } 
+    
+  
+      if (window.innerWidth >= 1050 && window.scrollY < 100){
         nav.classList.remove('sticky_navbar');
         logo.style.display = "none";
         menu.style.marginTop = "25px";
       }
+
+      
     
 
   }

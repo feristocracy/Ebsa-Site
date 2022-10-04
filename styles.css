@@ -147,8 +147,9 @@ body{
                     
 #logo_small {
             display: none;
-            position: absolute;
             left: 50px;
+            position: absolute;
+            float: left;
             height: 60px;
             }                    
 .sticky_navbar  {
@@ -161,6 +162,7 @@ body{
                 width: 100%;
                 position: fixed;
                 align-items: center;
+                right: 0;
                 }
 
 #homeLandscape  {
@@ -170,10 +172,6 @@ body{
 #nav{
     float: right;
     }
-
-#nav img{
-        
-        }
 
 #menu   {
         margin-top: 25px;
@@ -323,7 +321,7 @@ body{
 
 /*------------Sección Mapita ---------------*/
 #container_mapa {
-                padding: 10px 0;
+                padding: 30px 0 40px 0;
                 float: left;
                 position: relative;
                 display: flex;
@@ -386,12 +384,12 @@ body{
 
 /*------------Sección Video ---------------*/
 #video  {
-        place-items: center;
-        display: grid;
-        flex-direction: row;
-        height: 500px;
+        justify-content: center;
+        display: flex;
+        height: auto;
         width: 100%;
         background-color: #DDDDDD;
+        padding: 25px 0;
         }
 
 #video iframe {
@@ -401,18 +399,20 @@ body{
 
 /*------------Sección Productos----------------*/
 #productos_container{
+                    padding: 25px 0;
                     text-align: center;
                     background-color: #DDDDDD;
                     width: 100%;
-                    display: grid;
-                    place-items: center;
-                    flex-direction: column;
+                    display: flex;
                     justify-content: center;
+                    flex-direction: column;
                     padding-bottom: 20px;
+                    align-items: center;
                     }
                 
 #productos_container h2 {
                         font-size: 18px;
+                        text-align: center;
                         letter-spacing: 15px;
                         padding-bottom: 15px;
                         font-family: Montserrat;
@@ -490,7 +490,7 @@ body{
                 place-items: center;
                 height: 400px;
                 flex-direction: column;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
                 }            
 
 #granito_texto a{
@@ -499,11 +499,14 @@ body{
 
 #basalto{
         background-color: #DADADA;
-        height: 400px;
+        height: 300px;
         width: 100%;
+        max-width: 2000px;
         display: flex;
         justify-content: center;
+        align-self: center;
         z-index: 50;
+        flex-wrap: wrap;
         }
         
 #basalto::before {
@@ -533,7 +536,7 @@ body{
                 }
 
 #basalto img{
-            padding-top: 50px;
+            padding: 0;
             z-index: 100;
             }
 
@@ -573,7 +576,7 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         align-self: center;
-        margin-top: 150px;
+        margin-top: 280px;
         z-index: 100;
         }
 
@@ -609,6 +612,7 @@ body{
 #exportacion{
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             flex-direction: row;
             background-color: #DDDDDD;
@@ -727,6 +731,15 @@ body{
 
 }
 
+@media screen and (max-width: 1112px) {
+    #container_mapa {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     #nav {
         position: fixed;
@@ -741,26 +754,26 @@ body{
         transition: all 300ms;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    
+    #menu {
+        margin-top: 0;
+    }
 
     #menu li {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     #logo_small {
         display: block;
-        margin-bottom: 10px;
         position: relative;
+        margin-top: -10px;
+        margin-bottom: 40px;
         left: 0px;
-        float: left;
-        
-    }
-
-    #menu li a {
-
-    }
+        width: 120px;
+        height: auto;
+        }
 
     #carrusel_fondo {
         width: 100%;
@@ -778,16 +791,18 @@ body{
 
     #barras {
         position: fixed;
-        right: 30px;
-        top: 30px;
+        color: white;
+        right: 20px;
+        top: 34px;
         width: 50px;
         height: 50px;
         display: flex;
-        background-color: white;
+        background-color: rgb(0, 0, 0);
         border-radius: 50%;
         justify-content: center;
         align-items: center;
         transition: all 300ms;
+        z-index: 200;
     }
 
     #barras:hover {
@@ -816,6 +831,39 @@ body{
 }
 
 @media screen and (max-width: 888px) {
-    
+    #menuContainer {
+        display: flex;
+        justify-items: center;
+    }
+
+    #menuContainer h2 {
+        text-align: center;
+        left: 0px;
+        width: 80%;
+        top: 200px;
+        text-shadow: 0px 0px 0px #040404;
+        font-weight: bold;
+        margin-right: auto;
+        display: block;
+
+    }
+
+    #mapita img {
+        width: 100%;
+        height: auto;
+    }
+
+    .waves img {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 650px) {
+    #menuContainer h2 {
+        top: 130px;
+    }
 }
 

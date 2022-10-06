@@ -1,0 +1,47 @@
+#productos_container {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #DDDDDD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+#productos_container h2 {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-bottom: 15px;
+    font-family: Montserrat;
+    color: rgb(152, 150, 150);
+}
+
+#productos_container p {
+    font-size: 13px;
+    display: table-cell;
+    padding: 10px 0;
+    line-height: 21px;
+    width: 50%;
+    font-family: Poppins;
+    color: rgb(152, 150, 150);
+}
+
+
+#certificaciones_container {
+    height: 100%;
+    background-color: #DDDDDD;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#certificaciones_container img {
+    padding: 0 25px;
+}

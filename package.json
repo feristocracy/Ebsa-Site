@@ -1,0 +1,33 @@
+{
+  "name": "ebsa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": ".",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dynamic-import-polyfill": "^0.1.1",
+    "framer-motion": "^7.5.2",
+    "react": "^18.2.0",
+    "react-cool-onclickoutside": "^1.7.0",
+    "react-dom": "^18.2.0",
+    "react-slideshow-image": "^4.0.5",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.8.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "sharp": "^0.31.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vite-plugin-imagemin": "^0.6.1"
+  }
+}

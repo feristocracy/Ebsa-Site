@@ -1,0 +1,58 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    white-space: nowrap;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    padding: 0 1rem;
+
+    width: calc(100% - #{$scrollbar});
+    height: $navbar;
+
+    overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+        visibility: hidden;
+    }
+
+    // background: tomato;
+
+    z-index: 17;
+
+    &>.logo {
+        height: 100%;
+    }
+
+    &>.navbar-links {
+        &>a {
+            color: white;
+
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+
+            text-decoration: none;
+
+            transition: 0.2s ease-in-out;
+            transition-property: background;
+
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+
+            &:hover {
+                color: black;
+                border-radius: 2rem;
+                background: $color-light;
+            }
+        }
+    }
+}

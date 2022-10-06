@@ -1,0 +1,27 @@
+:root {
+    --bg: #171d34;
+    --sidebar: 18rem;
+}
+
+// General
+$carousel-width: 40rem;
+
+// Text
+$color-dark: black;
+$color-light: white;
+
+// Colors
+$color-primary: var(--bg);
+$color-secondary: rgb(53, 69, 119);
+$color-info: #00acc1;
+$color-success: #4caf50;
+$color-warning: #ff9800;
+$color-danger: #f44336;
+$color-rose: #e91e63;
+$color-dark: #212121;
+$color-light: #dddddd;
+
+// UI
+$navbar: 3.75rem;
+$sidebar: --sidebar;
+$scrollbar: 1rem;

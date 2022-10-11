@@ -5,7 +5,7 @@
 html {
     font-size: 16px;
 
-    @media screen and (max-width: 1280px) {
+    /* @media screen and (max-width: 1280px) {
         font-size: 15px;
     }
 
@@ -19,7 +19,7 @@ html {
 
     @media screen and (max-width: 600px) {
         font-size: 10px;
-    }
+    } */
 }
 
 body {
@@ -35,13 +35,6 @@ body {
     background-color: $color-primary;
 }
 
-section {
-    margin: 1rem 0;
-
-    // background: tomato;
-    border: 2px dashed white;
-}
-
 p:not(:last-child) {
     margin-bottom: 1rem;
 }
@@ -49,6 +42,7 @@ p:not(:last-child) {
 .button-link {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1rem;
 
     padding: 1rem;
     border: 1px solid #566963;
@@ -62,6 +56,35 @@ p:not(:last-child) {
     box-shadow: inset 0px 1px 3px 0px #91b8b3;
 
     cursor: pointer;
+
+    transition: 300ms;
+
+    &:hover {
+        background-color: #949d9a;
+    }
+}
+
+.myButton3 {
+    left: 50%;
+    margin-left: width/2;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background: #E6E6E9;
+    background-color: #E6E6E9;
+    border-radius:42px;
+    border:1px solid #566963;
+    display:block;
+    cursor:pointer;
+    color: black;
+    font-family:Montserrat;
+    font-size:15px;
+    font-weight: normal;
+    padding:10px 55px;
+    text-decoration:none;
+    transition: 300ms;
+
+    &:hover {
+        background-color: #b8bfbd;
+    }
 }
 
 /* custom scrollbar */

@@ -9,6 +9,10 @@
     color: white;
     background: $color-primary;
 
+    @media screen and (max-width: 1024px) {
+        flex-direction: column-reverse;
+    }
+
     &>.description {
         position: relative;
         padding: 5em;
@@ -20,7 +24,8 @@
 
 
         @media screen and (max-width: 1024px) {
-            width: 100%
+            width: 100%;
+            padding: 1.5rem;
         }
 
         &>.title {
@@ -42,8 +47,13 @@
                 right: unset;
 
                 white-space: unset;
+                font-size: 1.5rem;
 
                 margin-bottom: 2rem;
+            }
+
+            @media screen and (max-width: 900px) {
+                letter-spacing: unset;
             }
         }
 

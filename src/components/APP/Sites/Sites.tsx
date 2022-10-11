@@ -8,11 +8,8 @@ const Sites = () => {
         <div id="mapita">
           <img src={mapa} alt="Mapa de Estados Unidos y México" />
         </div>
-
-        <div id="plantas_div">
           <div id="plantas_texto">
             <h2>NUESTRAS PLANTAS</h2>
-
             <p>
               <br />
               <br /> En la actualidad contamos con cinco plantas ubicadas en diferentes estados de la República Mexicana
@@ -20,7 +17,6 @@ const Sites = () => {
 
             <div><a href="#" className="button-link">Saber más</a></div>
           </div>
-        </div>
       </div>
 
       <div id="video">

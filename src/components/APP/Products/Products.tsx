@@ -49,7 +49,7 @@ const Products = () => {
       </div>
 
       <div id="caliza">
-        <img src={caliza} alt="" />
+        <img src={caliza} alt="caliza rock" />
         <div id="caliza_texto">
           <p>Roca sedimentaria química compuesta por carbonato a calcio. <br /> Color claro-gris-orscuro. Densidad entre 2.4 a
             2.8 kg/dm3. Dureza variable entre 3 a 4 en escala mohs. </p>
@@ -60,7 +60,7 @@ const Products = () => {
       </div>
 
       <div className="waves secondwave">
-        <img src={waves1} alt="" />
+        <img src={waves1} alt="blue waves" />
       </div>
     </section>
   )

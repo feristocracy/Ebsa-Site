@@ -31,5 +31,11 @@
         width: 25rem;
 
         z-index: 1;
+
+        @media screen and (max-width:1024px) {
+            right: unset;
+            text-align: center;
+            width: 100vw;
+        }
     }
 }

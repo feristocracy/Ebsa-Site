@@ -11,11 +11,12 @@
 }
 
 #productos_container h2 {
-    font-size: 18px;
+    font-size: 19px;
     text-align: center;
     letter-spacing: 15px;
     padding-bottom: 15px;
     font-family: Montserrat;
+    font-weight: normal;
     color: rgb(152, 150, 150);
 }
 
@@ -44,4 +45,189 @@
 
 #certificaciones_container img {
     padding: 0 25px;
+}
+
+#granito {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+    margin-top: -50px;
+    flex-direction: row;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    &>img {
+        width: 25rem;
+
+        @media screen and (max-width: 1024px) {
+            width: 80vw;
+        }
+    }
+
+
+
+}
+
+#granito_texto {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &>p {
+        width: 30rem;
+        font-family: Montserrat;
+        font-size: 1rem;
+        text-align: justify;
+        color: white;
+        padding: 1rem 2rem;
+
+        @media screen and (max-width: 1024px) {
+            width: 90vw;
+        }
+    }
+
+    &>:first-child {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+}
+
+.waves {
+    display: flex;
+    width: 100%;
+
+    &>img {
+        width: 100%;
+    }
+}
+
+#basalto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: $clear-gray;
+    flex-wrap: wrap;
+    margin-bottom: 15rem;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 5rem;
+    }
+
+    &:before {
+        content: "";
+        z-index: -10;
+        display: block;
+        position: absolute;
+        height: 30rem;
+        width: 100%;
+        max-width: 2000px;
+        background: inherit;
+        transform-origin: bottom right;
+        transform: skewY(6deg);
+    }
+
+    &:after {
+        content: "";
+        z-index: -10;
+        display: block;
+        position: absolute;
+        height: 30rem;
+        width: 100%;
+        max-width: 2000px;
+        background: inherit;
+        transform-origin: top right;
+        transform: skewY(-6deg);
+    }
+
+    &>img {
+        width: 35rem;
+        margin-top: 2rem;
+    }
+}
+
+#basalto_texto {
+    justify-content: center;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 2rem;
+
+    @media screen and (max-width: 1024px) {
+        left: unset;
+    }
+
+    &>p {
+        font-family: Montserrat;
+        color: $dark-gray;
+        width: 35rem;
+        text-align: justify;
+        padding: 0 5rem;
+        margin-bottom: 7rem;
+        font-size: 1rem;
+
+        @media screen and (max-width: 1024px) {
+            padding: unset;
+            margin: 3rem 0;
+            width: 80vw;
+        }
+    }
+}
+
+#caliza {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 2rem;
+    }
+
+    &>img {
+        width: 35rem;
+    }
+}
+
+#caliza_texto {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>p {
+        width: 20rem;
+        font-family: Montserrat;
+        text-align: justify;
+        color: white;
+        margin-bottom: 8rem;
+
+        @media screen and (max-width: 1024px) {
+            margin: 1.5rem 0;
+        }
+    }
+
+    &>#bot {
+        margin-bottom: 2rem;
+    }
+
+}
+
+.secondwave {
+    transform: rotate(0.5turn) scaleX(-1);
 }

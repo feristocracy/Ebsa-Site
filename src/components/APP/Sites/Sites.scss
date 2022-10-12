@@ -13,22 +13,30 @@
     justify-content: center;
     align-items: center;
     background-color: #DDDDDD;
-    width: 100vw;
+    width: 100%;
 
     @media screen and (max-width: 1024px) {
         flex-direction: column-reverse;
-        width: 100vw;
+        width: 100%;
+        padding: 15px 0;
     }
 
 }
 
 #mapita {
-    width: 35rem;
+    width: 40rem;
+    padding: 0 1rem;
+
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
 
     &>img {
         margin: auto;
-        width: 90vw;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
+
+        
+
     }
 
 }

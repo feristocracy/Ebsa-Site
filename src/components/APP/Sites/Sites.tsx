@@ -11,7 +11,6 @@ const Sites = () => {
           <div id="plantas_texto">
             <h2>NUESTRAS PLANTAS</h2>
             <p>
-              <br />
               <br /> En la actualidad contamos con cinco plantas ubicadas en diferentes estados de la República Mexicana
             </p>
 

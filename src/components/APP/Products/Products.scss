@@ -28,6 +28,12 @@
     width: 50%;
     font-family: Poppins;
     color: rgb(152, 150, 150);
+
+    @media screen and (max-width:1024px) {
+        width: 80%;
+        font-size: 1rem;
+        text-align: justify;
+    }
 }
 
 
@@ -49,17 +55,17 @@
 
 #granito {
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15rem;
+    margin-bottom: 9rem;
     margin-top: -50px;
     flex-direction: row;
 
     @media screen and (max-width: 1024px) {
         margin-top: 2rem;
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
     }
 
     &>img {
@@ -90,7 +96,8 @@
         padding: 1rem 2rem;
 
         @media screen and (max-width: 1024px) {
-            width: 90vw;
+            width: 90%;
+            padding: 1rem;
         }
     }
 
@@ -117,10 +124,10 @@
     flex-direction: row;
     background-color: $clear-gray;
     flex-wrap: wrap;
-    margin-bottom: 15rem;
+    margin-bottom: 9rem;
 
     @media screen and (max-width: 1024px) {
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 
     &:before {
@@ -128,12 +135,12 @@
         z-index: -10;
         display: block;
         position: absolute;
-        height: 30rem;
+        height: 23rem;
         width: 100%;
         max-width: 2000px;
         background: inherit;
         transform-origin: bottom right;
-        transform: skewY(6deg);
+        transform: skewY(5deg);
     }
 
     &:after {
@@ -141,12 +148,12 @@
         z-index: -10;
         display: block;
         position: absolute;
-        height: 30rem;
+        height: 23rem;
         width: 100%;
         max-width: 2000px;
         background: inherit;
         transform-origin: top right;
-        transform: skewY(-6deg);
+        transform: skewY(-4deg);
     }
 
     &>img {
@@ -179,7 +186,7 @@
 
         @media screen and (max-width: 1024px) {
             padding: unset;
-            margin: 3rem 0;
+            margin: 1rem 0 3rem 0;
             width: 80vw;
         }
     }
@@ -191,16 +198,20 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-self: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: 1024px) {
-        margin-top: 2rem;
+        margin-top: 0;
     }
 
     &>img {
         width: 35rem;
+
+        @media screen and (max-width: 1024px) {
+            width: 80%;
+        }
     }
 }
 
@@ -218,7 +229,7 @@
         margin-bottom: 8rem;
 
         @media screen and (max-width: 1024px) {
-            margin: 1.5rem 0;
+            margin: 1.5rem 0 2rem 0;
         }
     }
 

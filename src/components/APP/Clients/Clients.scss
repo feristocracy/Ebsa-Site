@@ -13,10 +13,14 @@
     margin-bottom: 2rem;
     letter-spacing: 15px;
     font-weight: lighter;
+
+    @media screen and (max-width:1024px) {
+        font-size: 25px;
+    }
 }
 
 #clients img {
-    width: 600px;
+    width: 40rem;
 }
 
 #bottom {

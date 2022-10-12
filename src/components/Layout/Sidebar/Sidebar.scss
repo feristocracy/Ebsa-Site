@@ -1,7 +1,7 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: 0; /* $scrollbar; */
+    right: $scrollbar; /* $scrollbar; */
 
     font-family: "Poppins", sans-serif;
 
@@ -101,7 +101,7 @@
     }
 
     &:hover {
-        background: rgb(141, 141, 141);
+        background: rgb(0, 0, 0);
     }
 }
 
